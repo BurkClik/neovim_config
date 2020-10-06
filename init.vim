@@ -34,17 +34,18 @@ call plug#end()
 if (has("termguicolors"))
 	set termguicolors
 endif
-" syntax enable
-" colorscheme OceanicNext
+
+# Theme config
 let g:sonokai_style = 'andromeda'
 let g:sonokai_enable_italic = 1
 let g:sonokai_disable_italic_comment = 1
 
 colorscheme sonokai
 
-
+# Lines number
 set number
 
+# NERDTree config
 let g:NERDTreeShowHidden = 1
 let g:NERDTreeMinimalUI = 1
 let g:NERDTreeIgnore = []
@@ -91,8 +92,8 @@ let g:fzf_action = {
 let $FZF_DEFAULT_COMMAND = 'ag -g""'
 
 " set encoding=utf8
-set guifont=FiraCode\ Medium\ Font\ 11
+" set guifont=FiraCode\ Medium\ Font\ 11
 
-set shell=/usr/bin/zsh
+" set shell=/usr/bin/zsh
 
 source $HOME/.config/nvim/themes/airline.vim
